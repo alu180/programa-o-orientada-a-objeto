@@ -45,17 +45,17 @@ public class Elevador {
     }
 
 
-    public Elevador() {
-        this.capacidadeMaxima = 10;
+    public Elevador(int totalAndares, int capacidadeMaxima) {
+        this.capacidadeMaxima = capacidadeMaxima;
+        this.totalAndares = totalAndares;
         this.andarAtual = 0;
-        this.totalAndares = 6;
         this.quantidadePessoas = 0;
     }
 
     
     public static void main(String[] args) {
         
-        Elevador elevador = new Elevador();
+        Elevador elevador = new Elevador(6, 10);
 
         
         System.out.println("Entrando no elevador: " + elevador.entrar());
