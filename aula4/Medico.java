@@ -15,10 +15,9 @@ public class Medico extends Pessoa{
         System.out.println("atendendo paciente...");
 
     }
-    //Override
-
+    @Override
     public void comprimentar(){
-        super.comprimentar();
+        //super.comprimentar();
         System.out.println("ola sou dr." +nome +" e tenho a especialidade " +especialidade);
 
     }
