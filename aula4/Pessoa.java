@@ -1,7 +1,7 @@
 package aula4;
 
 public class Pessoa {
-    protected String nome;
+    protected String nome; //protected significa que e acessivel por subclasses
     private int idade;
 
     Pessoa(String nome, int idade) {
